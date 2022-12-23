@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+@import url(reset.css);
+@import url(variables.css);
+
+
+/* COMMON */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: var(--black);
+    line-height: 1.4;
+    width:1100px;
+}
+.inner {
+    box-sizing: border-box;
+  padding: 0 60px ; 
+  margin: auto;  
+}
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+.header-hover:hover {
+    color: var(--blue);
+}
+
+
+/* HEADER */
+.top-banner {
+    display: flex;
+}
+.top-banner img{
+    width: 50vw;
+}
+.header {
+    
+}
+
+.header-top {
+    display: flex;
+    margin: auto ;
+    align-items: center;
+    width: 100vw;
+    height: 80px;
+    border-bottom: 1px solid var(--light-grey);
+}
+.header-top .header-top-left {
+    display: flex;
+}
+.header-top  .logo {
+    display: inline-block;
+    font-family: cursive;
+    height: 30px;
+    font-size: 25px;
+    margin-right: 35px;
+    
+}
+.header-top .header-top-left ul {
+    display: flex;
+    font-size: 18px;
+    font-weight: 700;
+    align-items: center;
+}
+.header-top .header-top-left ul li a {
+    padding: 25px 5px 15px;
+    margin: 0 10px ;
+    transform: translateY(-10px);
+
+}
+.header-top .header-top-left ul li:nth-child(1) a{
+    color: var(--blue);
+}
+.header-top .header-top-right {
+    display: flex
+}
+.header-top .header-top-right .search-bar {
+    box-sizing: border-box;
+    margin-left: 20px;
+    position:relative;
+    font-size: ;
+}
+.header-top .header-top-right .search-bar .material-symbols-outlined.search {
+    position:absolute;
+    top: 4px;
+    font-size: 24px;
+    padding: 5px 10px;
+    
+}
+.header-top .header-top-right .search-bar input {
+    outline: none;
+    box-sizing: border-box;
+    height: 40px;
+    width: 286.47px;
+    padding: 10px 40px;
+    border:1px solid var(--light-grey);
+    border-radius: 5px;
+    background-color: #fff;
+}
+.header-top .header-top-right .search-bar input::placeholder {
+    color: var(--light-grey);
+}
+.header-top .header-top-right .material-symbols-outlined.cart a{
+    font-size: 30px;
+    padding: 6px;
+    margin: 10px;
+    transform: translateY(-100px);
+}
+.header-top .header-top-right .user-menu {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+.header-top .header-top-right .user-menu a {
+    padding: 5px 10px;
+}
+.header-top .header-top-right .user-menu div:nth-child(2)::before {
+    content: "";
+    border: .7px solid var(--light-grey);
+}
+.header-top .header-top-right .user-menu .write {
+    width: 94.64px;
+    height: 40px;
+    box-sizing: border-box;
+    background-color: var(--blue);
+    border-radius: 5px;
+    position: relative;
+    color: #fff;
+    padding: 0 20px; 
+    display: flex;
+    align-items: center;
+}
+.header-top .header-top-right .user-menu .write .write__text {
+
+  
+} 
+.header-top .header-top-right .user-menu .write .write__chv {
+    font-size: 27px;
+    position: absolute;
+    right: 9px;
+    top: 7px;
+}
+.header-btm {
+    height: 65px;
+    width: 100vw;
+    overflow: scroll;
+    display: flex;
+    border-bottom: .7px solid var(--light-grey);
+}
+.header-btm ul {
+    display: flex;
+    align-items: center;
+}
+.header-btm ul li {
+    display: inline-block;
+    padding: 12px 6px;
+    margin: 0 5px;
+}
+.header-btm .menu li:last-child a {
+    display: flex;
+    align-items: center;
+}
+.header-btm .menu .beta {
+    color: #fff;
+    background-color: var(--grey);
+    font-size: 10px;
+    font-weight: 500;
+    padding: 0 3px;
+    height: 16px;
+    margin-left: 3px;
+    border-radius: 5px;
+}
+
+
+/* WELCOME_PAGE */
+.welcome-page {
+    padding-top: 50px;
+
+}
+.welcome-page .welcome-page__main {
+    display: flex;
+}
+.welcome-page .main-photo img {
+    height: 431.98px;
+    border-radius: 5px;
+}
+.welcome-page .main-swipe {
+    width: 228.75px;
+    height: 431.98px;
+    margin-left: 30px;
+    background-color: aqua;
+}
+.welcome-page .main-swipe:hover {
+
+}
+.welcome-page .welcome-page__sub ul {
+    display: flex;
+    justify-content: space-around;
+}
+.welcome-page .welcome-page__sub ul li {
+    
+}
+.welcome-page .welcome-page__sub ul li a{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.welcome-page .welcome-page__sub ul li img{
+    width: 88px;
+}
