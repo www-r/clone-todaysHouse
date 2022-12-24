@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
 @import url(reset.css);
 @import url(variables.css);
+@import url(tag.css);
 
 
 /* COMMON */
@@ -8,18 +9,85 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
     color: var(--black);
     line-height: 1.4;
-    width:1100px;
+    width:100vw;
 }
 .inner {
     box-sizing: border-box;
-  padding: 0 60px ; 
-  margin: auto;  
+    padding: 0 60px ; 
+    
+    margin: 40px 105px;  
 }
 a {
     text-decoration: none;
     color: var(--black);
 }
 .header-hover:hover {
+    color: var(--blue);
+}
+.tag {
+    color: #fff;
+    position: relative;
+    font-size: 24px
+}
+.tag span {
+    position: absolute;
+    display: inline-block;
+    right: 10px;
+    bottom: 15px;
+}
+.tag-full span {
+    fill: #fff;
+    color: #fff;
+}
+/* .new {
+    background-color: #FF7777;
+    color: #fff;
+    padding: 0 6px;
+    width: 34.63px;
+    height: 20px;
+} 
+.new > div  */
+
+.hidden {
+    display: none;
+}
+.font-blur h2:hover, .font-blur span:hover {
+    opacity: .6;
+}
+.swipe-btn {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    box-shadow: 0 2px 5px rgba(63, 71, 77, 0.15);
+    cursor: pointer;
+}
+.swipe-btn:hover {
+    background-color: var(--light-grey);
+} 
+/* .--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+} */
+.--header {
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0
+}
+.--header > h2 , .--header > span {
+    display: block;
+}
+.blue {
     color: var(--blue);
 }
 
@@ -66,9 +134,6 @@ a {
     transform: translateY(-10px);
 
 }
-.header-top .header-top-left ul li:nth-child(1) a{
-    color: var(--blue);
-}
 .header-top .header-top-right {
     display: flex
 }
@@ -76,7 +141,7 @@ a {
     box-sizing: border-box;
     margin-left: 20px;
     position:relative;
-    font-size: ;
+    
 }
 .header-top .header-top-right .search-bar .material-symbols-outlined.search {
     position:absolute;
@@ -191,6 +256,9 @@ a {
 .welcome-page .main-swipe:hover {
 
 }
+.welcome-page__sub {
+    margin: 20px 0;
+}
 .welcome-page .welcome-page__sub ul {
     display: flex;
     justify-content: space-around;
@@ -205,4 +273,80 @@ a {
 }
 .welcome-page .welcome-page__sub ul li img{
     width: 88px;
+}
+
+
+/* MAIN_USER_PHOTO */
+.main-user-photo {
+    display: flex;
+    flex-direction: column;
+ 
+}
+.main-user-photo .item-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+}
+.main-user-photo .item-box .item{
+    display: flex;
+    flex-direction: column;
+    height: 237.33px;
+}
+.main-user-photo .item-box .item .item-photo img{
+    width: 269px;
+    height: 195px;
+}
+
+
+/* PRODUCT_CATEGORY */
+.category {
+    margin: 40px 105px;
+    height: 98px;
+}
+.product-category {
+    display: flex;
+    justify-content: space-between;
+    position: relative;  
+}
+.product-category .swipe-btn-right {
+    right: 0;
+    top: 5px;
+}
+.product-category .swipe-btn-left {
+    left: 0;
+    top: 5px;
+}
+.product-category li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* TODAYS_DEAL */
+.todaysdeal {
+    
+}
+.todaysdeal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.todaysdeal .deal-item-container {
+    flex: flow;
+}
+.todaysdeal .deal-item-container .deal-item-box {
+    display: flex;
+    flex-direction: column;
+}
+.todaysdeal .deal-item-container .deal-item-box .deal-item-photo {
+    position: relative;
+}
+.todaysdeal .deal-item-container .deal-item-box .deal-item-photo img:nth-child(2) {
+    position: absolute;
+    right: 0;
+    top: 0;
 }
