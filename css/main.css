@@ -14,7 +14,6 @@ body {
 .inner {
     box-sizing: border-box;
     padding: 0 60px ; 
-    
     margin: 40px 105px;  
 }
 a {
@@ -24,6 +23,15 @@ a {
 .header-hover:hover {
     color: var(--blue);
 }
+.badge {
+    font-size: 10px;
+    font-weight: 500;
+    padding: 0 3px;
+    height: 16px;
+    margin-left: 3px;
+    border-radius: 5px;
+}
+
 .tag {
     color: #fff;
     position: relative;
@@ -90,6 +98,7 @@ a {
 .blue {
     color: var(--blue);
 }
+
 
 
 /* HEADER */
@@ -223,16 +232,11 @@ a {
     display: flex;
     align-items: center;
 }
-.header-btm .menu .beta {
+.header-btm .menu li div.badge {
     color: #fff;
     background-color: var(--grey);
-    font-size: 10px;
-    font-weight: 500;
-    padding: 0 3px;
-    height: 16px;
-    margin-left: 3px;
-    border-radius: 5px;
 }
+
 
 
 /* WELCOME_PAGE */
@@ -325,10 +329,8 @@ a {
 }
 
 
+
 /* TODAYS_DEAL */
-.todaysdeal {
-    
-}
 .todaysdeal-header {
     display: flex;
     justify-content: space-between;
@@ -336,17 +338,54 @@ a {
     padding: 20px 0;
 }
 .todaysdeal .deal-item-container {
-    flex: flow;
+    display: flex;
+    
+}
+
+.todaysdeal .deal-item-container a {
+    width: 269px;
+   
 }
 .todaysdeal .deal-item-container .deal-item-box {
     display: flex;
-    flex-direction: column;
+   
 }
 .todaysdeal .deal-item-container .deal-item-box .deal-item-photo {
     position: relative;
 }
-.todaysdeal .deal-item-container .deal-item-box .deal-item-photo img:nth-child(2) {
+.todaysdeal .deal-item-container .deal-item-box .deal-item-photo div.badge {
+    background-color: rgb(239,128,122);
+    color: #fff;
+    height: 23px;
+    font-size: 15px;
+    position: absolute;
+    top: 9px;
+    left: 8px;
+}
+.todaysdeal .deal-item-container .deal-item-box .deal-item-photo img.deal-item__product {
+    width: 269px;
+}
+.todaysdeal img.endsale {
     position: absolute;
     right: 0;
     top: 0;
+    width: 70px;
+}
+.todaysdeal .deal-item-container .deal-item-box .deal-item-text {
+    width: 100%;
+}
+.todaysdeal .deal-item-container .deal-item-box .deal-item-text img.todaystart {
+    height: 16px;
+}
+.todaysdeal .deal-item-container .deal-item-box .deal-item-text .badges {
+    display: flex;
+    margin-right:2px;
+}
+.todaysdeal .badge--free-shipping{
+    background-color: var(--light-grey);
+    color: var(--grey);
+}
+.todaysdeal .badge--sale{
+    background-color: rgb(239,128,122);
+    color: #fff;
 }
